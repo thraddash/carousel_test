@@ -1,5 +1,6 @@
 import React from 'react';
 import DisplayCarousel from './DisplayCarousel';
+import VideoCarousel from './VideoCarousel';
 
 const App = () => {
     return (
@@ -7,6 +8,7 @@ const App = () => {
             <div className="ui row">
                 <div className="column">
                     <DisplayCarousel />
+                    <VideoCarousel />
                 </div>
             </div>
         </div>
