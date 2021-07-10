@@ -8,28 +8,40 @@ class VideoCarousel extends Component {
         return (
             <Carousel infiniteLoop showThumbs={false} swipeable={true} useKeyboardArrows dynamicHeight={true} emulateTouch={true}>
 
-                <div>
-                    <ReactPlayer className='player-wrapper'
+                <div className='player-wrapper'>
+                    <ReactPlayer
+                        config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+                        // Disable right click
+                        onContextMenu={e => e.preventDefault()}
                         url='/videos/castle.mp4'
                         playIcon={<button>Play</button>}
                         controls={true}
+                        width='100%'
                     /><p className="legend2">Castlevania (1986)</p>
                 </div>
-                <div>
-                    <ReactPlayer className='player-wrapper'
+                <div className='player-wrapper'>
+                    <ReactPlayer 
+                        config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+                        // Disable right click
+                        onContextMenu={e => e.preventDefault()}
                         url='/videos/axe.mp4'
                         playIcon={<button>Play</button>}
                         controls={true}
+                        width='100%'
                     />
                     <p className="legend2">Golden Axe</p>
                 </div>
-                <div>
-                    <ReactPlayer className='player-wrapper'
-                        url='/videos/comic.mp4'
+                <div className='player-wrapper'>
+                    <ReactPlayer
+                        config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+                        // Disable right click
+                        onContextMenu={e => e.preventDefault()}
+                        url='/videos/indy.mp4'
                         playIcon={<button>Play</button>}
                         controls={true}
+                        width='100%'
                     />
-                    <p className="legend2">Captain Comic</p>
+                    <p className="legend2">Indy</p>
                 </div>
             </Carousel>
 

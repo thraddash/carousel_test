@@ -319,9 +319,13 @@
 	opacity: 1
 }
 
+.player-wrapper {
+	 position: relative;
+}
 
 .react-player {
-	position: relative;
+	/* position: relative; */
+	position: absolute;
     left: 0;
 	top: 0;
 	transform: none;
