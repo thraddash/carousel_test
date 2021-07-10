@@ -10,10 +10,10 @@ class VideoCarousel extends Component {
 
                 <div>
                     <ReactPlayer className='player-wrapper'
-                        url='/videos/drink.mp4'
+                        url='/videos/castle.mp4'
                         playIcon={<button>Play</button>}
                         controls={true}
-                    /><p className="legend2">wine 1</p>
+                    /><p className="legend2">Castlevania (1986)</p>
                 </div>
                 <div>
                     <ReactPlayer className='player-wrapper'
@@ -30,6 +30,14 @@ class VideoCarousel extends Component {
                         controls={true}
                     />
                     <p className="legend2">Captain Comic</p>
+                </div>
+                <div>
+                    <ReactPlayer className='player-wrapper'
+                        url='/videos/prince.mp4'
+                        playIcon={<button>Play</button>}
+                        controls={true}
+                    />
+                    <p className="legend2">Prince of Persia 2 (1989)</p>
                 </div>
             </Carousel>
 
